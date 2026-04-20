@@ -1,9 +1,3 @@
-// 7) Write a function named findAverage that takes an array of numbers and returns the average of all elements.
-
-// 8) Write a function named isLeapYear that takes a year as an argument and returns true if the year is a leap year, and false if it is not.
-
-//.......................................................................................
-
 // 1) Write a function named calculateDifference that takes two arguments and returns the difference between the first and second arguments.
 
 let calculateDifference = (num1, num2) => {
@@ -108,3 +102,13 @@ function lowercaseFirstLetter(str) {
 }
 let string = "HELLOOWORLD";
 console.log(lowercaseFirstLetter(string));
+
+
+// 7) Write a function named findAverage that takes an array of numbers and returns the average of all elements.
+
+
+
+
+
+
+// 8) Write a function named isLeapYear that takes a year as an argument and returns true if the year is a leap year, and false if it is not.
