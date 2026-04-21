@@ -21,11 +21,4 @@ I am a curious developer who loves diving deep into the world of JavaScript. Cur
 
 ---
 
-### 📫 How to reach me:
-
-- 💼 LinkedIn: [Your LinkedIn Profile Link]
-- 📧 Email: [Your Email Address]
-
----
-
 > "Code is like humor. When you have to explain it, it’s bad." – Cory House

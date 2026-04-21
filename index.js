@@ -4,7 +4,7 @@ let calculateDifference = (num1, num2) => {
   return num1 - num2;
 };
 
-console.log(calculateDifference(6, 9));
+console.log(calculateDifference(16, 9));
 
 // 2) Write a function named isOdd that takes one argument and returns true if the number is odd, and false if it is not.
 
@@ -39,24 +39,9 @@ function findSmall(arr) {
   });
 }
 
-// Method -- 3
-
 let arr = [5, 7, 75, 2, 99, 3, 4, 8];
 console.log(findSmall(arr));
 console.log(findMin(arr));
-
-function getSmallest(numbers) {
-  let small = numbers[0];
-  for (const num of numbers) {
-    if (num < small) {
-      small = num;
-    }
-  }
-  return small;
-}
-
-let newArr = [5, 7, 75, 2, 99, 3, 4, 8];
-console.log(getSmallest(newArr));
 
 // 4) Write a function named filterEvenNumbers that takes an array of numbers and returns a new array containing only the even numbers.
 
@@ -88,7 +73,7 @@ console.log(getEvernNum(evenArr));
 function sortArrayDescending(arr) {
   let shallowCopy = [...arr];
   let returnSortArr = shallowCopy.sort((a, b) => {
-    return a - b;
+    return b - a;
   });
   console.log(returnSortArr);
 }
@@ -103,12 +88,25 @@ function lowercaseFirstLetter(str) {
 let string = "HELLOOWORLD";
 console.log(lowercaseFirstLetter(string));
 
-
 // 7) Write a function named findAverage that takes an array of numbers and returns the average of all elements.
 
+function findAverage(data) {
+  const sum = data.reduce((acc, curr) => acc + curr, 0);
+  return sum / data.length;
+}
 
-
-
-
+let data = [222, 66, 33, 99, 44, 100, 66];
+console.log(findAverage(data));
 
 // 8) Write a function named isLeapYear that takes a year as an argument and returns true if the year is a leap year, and false if it is not.
+
+function isLeapYear(year) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    return "Leap year";
+  } else {
+    return "Normal year";
+  }
+}
+console.log(isLeapYear(2024));
+
+//...................................................................................................................
